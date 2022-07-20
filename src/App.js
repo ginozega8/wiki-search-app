@@ -6,7 +6,7 @@ function App() {
 
   const handleSubmit = async e => {
     e.preventDefault(); //Prevent Refreshing
-    if (search == "") return; //Prevent Empty Strings
+    if (search === "") return; //Prevent Empty Strings
     
     const endpoint =`https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info&inprop=url&utf8=&format=json&origin=*&srlimit=25&srsearch=${search}`; //Calling Wikipedia API
     const response = await fetch(endpoint)
