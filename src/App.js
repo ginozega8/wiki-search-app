@@ -23,7 +23,7 @@ function App() {
     <div className="App">
       
       <header>
-      <img src={surfer} className="surf-icon"></img>
+      <img src={surfer} className="surf-icon" alt="Icon"></img>
         <h1>Wiki Surfer</h1>
 
         <form class="search-box" onSubmit={handleSubmit}> 
